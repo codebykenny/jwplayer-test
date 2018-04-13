@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,10 +21,10 @@
     jwplayer("player").setup({
         "playlist": [{
             "title": 'test',
-            "file": '/assets/videos/test.mp4',
+            "file": "{{ '/assets/videos/test.mp4' | relative_url }}",
             "type": "mp4",
             "tracks": [{
-                "file": "/assets/subtitles/test.vtt",
+                "file": '{{ "/assets/subtitles/test.vtt" | relative_url }}',
                 "default": true,
                 "kind": "captions"
             }]
