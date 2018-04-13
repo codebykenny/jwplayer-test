@@ -7,10 +7,21 @@
     <title>Test</title>
 </head>
 <body>
+    <style>
+        .center {
+            text-align: center;
+        }
 
-    <h3 style="text-align: center;color: red;">Subtitles do not work with Chromecast</h3>
+        .center > div {
+            display: inline-block;
+        }
+    </style>
 
-    <div id="player"></div>
+    <div class="center">
+        <h3 style="">Subtitles do not work with Chromecast</h3>
+        <br>
+        <div id="player"></div>
+    </div>
 
     <script src="https://content.jwplatform.com/libraries/5u4mzZn3.js"></script>
 
@@ -28,8 +39,8 @@
         }],
         "cast": {
         },
-        "width": '100%',
-        "height": '100%',
+        "width": '500px',
+        "height": '250px',
         "fallback": false,
         "primary": "html5",
         "aspectratio": "20:9",
